@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8 " />
+<meta name="viewport"  content="width=device-width, initial-scale=1">
+<title>Simple web</title>
+<style type="text/css">
+*{
+box-sizing :border-box ;
+padding :0px;
+margin :0px;
+}
+.nav{
+display:none;
+}
+.header{
+display: flex;
+flex-direction:row;
+height:10vh;
+justify-content:center; 
+border-bottom:1px solid black;
+background : green ;
+justify-content: space-between;
+padding:10px 10px;
+align-items: center;
+}
+.logo{
+padding:10px;
+font-size:30px;
+font-weight:bolder;
+color: white ;
+font-family:cursive;
+text-shadow:5px 5px 2px black;
+}
+.main{
+display:flex;
+flex-direction: column ;
+height:10%;
+align-items:center ;
+padding:15px;
+}
+.img{
+height:50vh;
+width:50vh;
+background-image:url(Brian.jpg);
+background-position: center;
+background-size: 100%;
+background-repeat:no-repeat;
+border-radius:100%;
+border:2px solid green ;
+transition-timing-function:ease-in;
+transition-property:border border-radius background-size height width;
+transition-duration:2s;
+}
+.name{
+font-weight:bold;
+font-size:12px;
+align-content:center;
+width:40%;
+margin:10px;
+}
+.par{
+margin:5px;
+}
+span {
+color:green;
+}
+.footer {
+display:flex;
+flex-direction:row;
+gap:20px;
+height:10%;
+padding:10px;
+justify-content:space-between;
+align-items:center;
+background-color:green;
+border-top:1px solid black ;
+transition-timing-function:ease-in;
+transition-property: justify-content padding;
+transition-duration:2s;
+}
+.search-bar {
+margin-left:55px;
+} 
+@media screen and (orientation: landscape ) {
+.header{
+height:auto;
+justify-content: space-between;
+}
+.main {
+display:flex;
+flex-direction:row;
+}
+.img {
+border-radius:10%;
+background-size:100%;
+border:1px solid black ;
+width:50%;
+height:250px;
+}
+.name{
+display:none;
+}
+.nav {
+display:block;
+display:flex;
+flex-direction:row;
+gap: 20px;
+align-items: center;
+
+}
+.nav >div {
+font-weight :bold;
+}
+.footer {
+border-top:1px solid black;
+justify-content:center;
+gap:30px;
+padding-left:40%;
+}
+.par {
+width:50%;
+padding:20%;
+}
+.menu-bar {
+display:none;
+}
+}
+</style>
+</head>
+<body>
+<div class="container" >
+<div class="header">
+<div class="logo">Brian webdev</div>
+<div class="search-bar"><img src="icons/search.png" height="20px" width="20px"></div>
+<div class="menu-bar"><img src="icons/menu-burger.png" height="40px" width="30px"></div>
+<div class="nav">
+<div>Home</div>
+<div>Portfolio</div>
+<div>About</div>
+</div>
+</div>
+<div class="main">
+<div class="img"></div>
+<div class="name">Brian Kamwera </div>
+<div class="par">I am<span> <b><i>Brian Kamwera</i> </b></span><br>I am learning web <br>Development </div>
+</div>
+
+<div class="footer">
+<div><img src="icons/Facebook.png" alt="Facebook" height="50px" width="50px"/></div>
+<div><img src="icons/youtube.png" alt="YouTube" height="50px" width="50px"/></div>
+<div><img src="icons/Whatsapp.png" alt="Whatsapp" height="50px" width="50px"/></div>
+</div>
+</div>
+</body>
+</html>
