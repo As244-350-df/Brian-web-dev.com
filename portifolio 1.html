@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My profile web page</title>
+<meta http-equiv="Content-Type" content="text/html; " />
+<meta name="viewport" content="width=device-width initial-scale=1">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+overflow-x:hidden;
+}
+#header{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   position: fixed;
+   top:0;
+   left:0;
+   background:linear-gradient(60deg,#afff15,#fffc15);
+   width:100vw;
+   height:100px;
+   padding:10px;
+}
+.header-container{
+height:auto;
+position:static;
+top:0;
+left:0;
+width:auto;
+}
+.logoName{
+ font-size:25px;
+ font-weight:bolder;
+} 
+.menuBar{
+position:fixed;
+right:10px;
+display:flex;
+flex-direction:colomn;
+align-items:center;
+justify-content:center;
+background:gray;
+border-radius:50%;
+height:50px;
+width:50px;
+transition-property:all;
+transition-duration:.5s;
+transition-timing-function:ease-in;
+box-shadow:5px 5px 30px black;
+}
+.section1{
+display:flex;
+flex-direction:column;
+padding-top:100px;
+height:auto;
+background:transparent;
+align-items:center;
+background:url("DSC_0075.JPG");
+background-origin:padding-box;
+background-position:center;
+background-size:cover;
+}
+h2{
+margin-bottom:5px;
+}
+.section1>h1,h2,h3{
+  font-family:Arial,sans-serif; 
+  color: white;
+  text-align: center;
+}
+#tee{
+  font-size:40px;
+  font-family:cursive;
+  color:blue;
+}
+.Introduction{
+padding:15px;
+font-family:Verdana,Arial,sans-serif;
+color:skyblue;
+}
+.Introduction ,#mystory>p{
+font-family:Verdana,Arial,sans-serif;
+}
+.Introduction , .section1>h1{
+background:rgba(0,0,0,0.7);
+width:100vw;
+}
+.section2{
+background:linear-gradient(120deg,#ff4a2b,#ffd240);
+height:auto;
+padding:15px;
+}
+#par{
+color:white;
+font-family:Verdana,Arial,sans-serif;
+}
+.footer{
+height:200px;
+width:100vw;
+display:flex;
+flex-direction:column;
+}
+.footer-nav{
+ display:flex;
+ width:100%;
+ height:auto;
+ background:black;
+}
+.brand{
+width:40vw;
+height:150px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.info{
+width:60vw;
+height:150px;
+display:flex;
+flex-direction:column;
+padding:10px;
+align-items:center;
+}
+.web-info{
+ height:80px;
+ width:50vw;
+ padding:10px;
+ color: white;
+ font-size:7px;
+ text-align:center;
+ display:flex;
+ align-items:center;
+}
+.nav-info{
+height:60px;
+width:50vw;
+display:flex;
+justify-content: center;
+align-items:center;
+}
+.nav-info > ul li{
+list-style-type:none;
+font-size:7px;
+text-align:center;
+}
+.nav-info > ul li a{
+text-decoration:none;
+color:white;
+font-family:fantasy;
+}
+#copyright-box{
+background:#332411;
+display:flex;
+align-items:center;
+justify-content:center;
+height:50px;
+width:100vw;
+}
+#copyright-box p{
+color:white;
+width:100vw;
+background:#332411;
+font-size:10px;
+text-align:center;
+}
+#menuList{
+display:none;
+width:90%;
+justify-content:center;
+}
+#menuList ul li{
+margin:10px;
+display:block;
+list-style-type:none;
+border:2px solid black;
+width:90%;
+text-align:center;
+}
+#menuList ul li a{
+color:black;
+text-decoration:none;
+}
+#close-menu{
+background:transparent;
+height:50px;
+width:50px;
+position:absolute;|
+display:flex;
+justify-content:center;
+align-items:center;
+right:10px;
+top:10px;
+}
+#Brand-image{
+border-radius:50%;
+animation-name:BrandRotate;
+animation-direction:normal;
+animation-duration:10s;
+animation-iteration-count:infinite;
+animation-play-state:on;
+animation-timing-function:linear;
+}
+@keyframes BrandRotate{
+0%{
+transform:rotateY(0deg);
+}
+25%{
+transform:rotateY(90deg);
+}
+50%{
+transform:rotateY(180deg);
+}
+75%{
+transform:rotateY(270deg);
+}
+100%{
+transform:rotateY(360deg);
+}
+}
+</style>
+</head>
+<body>
+<header id="header-container">
+<div id="header">
+    <div class="logoName">Sof<span id="tee">T</span>chlomes</div>
+    <div class="menuBar" id="menu">
+    <img src="icons/menu-burger.png" height="20px" width="20px" id="menu-image">
+    <div id="menuList">
+      <div id="close-menu"><a href="#" ><img src="icons/cross.png" height="30px" width="30px"></a></div>
+      <ul>
+      <li id="navbar"><a href="#" >Home</a></li>
+      <li id="navbar"><a href="" >Services</a></li>
+      <li id="navbar"><a href="#" >Gallery</a></li>
+      </ul>
+    </div>
+    
+    </div>
+</div>
+</header>
+<main>
+<section class="section1">
+<h1>My personal profile </h1>
+<div class="Introduction">
+<p>
+Hie everyone My name is Brian Kamwera.I have created this website to showcase a few skills and experiences that  I have  learned so far since I embarked on my journey as to learn web development and also to mark the begin of my new and vast project 'softchlomes'which I have been working on and finally decided to come up the with the name.
+</p>
+</div>
+</section>
+<section class="section2">
+  <div class="container">
+    <h2>My Coding journey </h2>
+    <article id="mystory">
+    <p class="par">
+      <h3>When did started learning to code?</h3><br>
+      I started learning to code like two years ago in the year 2022 but I started learning Learning web development in December,2023.I have learned several languages such as c++, python,sql and recently Html,css and JavaScript, although I still have alot to learn when it comes to JavaScript . talking of my level as a coding artist I think ai am transitioning from a begginer to an intermediate developer 
+      <br>
+    </p>
+    <p class="par">
+    <h3>Where I'm I Now?</h3><br>
+    Right now I have finished learning all the basics in Html,Css and JavaScript and I am focusing on improving my skills in JavaScript and later in Css. 
+    
+    </p>
+    <p class="par" id="par">
+    <h3>what are my dreams and goals?</h3><br>
+    My main dream and objective is to become a professional web developer  and at least land a job my is to achieve this dream in a space of four years, five if there some inconveniences.
+    </p>
+    </article>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+<div class="footer-nav">
+<div class="brand"><img src="images/Brand1.png" height="90px" width="90px" id="Brand-image">
+</div>
+<div class="info">
+  <div class="web-info">This is just  a simple web page.No unauthorized  copyright is alowed</div>
+  <div class="nav-info">
+    <ul>
+       <li><a href="tel:+265886522243" >contact</a></li>
+       <li><a href="#" >My Galley</a></li>
+       <li><a href="#" >Home</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="copyright-box"><p>© copyright alright reserved, Brian Kamwera (2024).</p></div>
+</footer>
+
+<script type="text/javascript">
+ let menuBar=document.getElementById("menu");
+ let menuList=document.getElementById("menuList");
+ let menuImage=document.getElementById("menu-image");
+ let closeMenu=document.getElementById("close-menu");
+ menuBar.addEventListener("click",()=>{
+  menuBar.style.top="70px";
+  menuBar.style.borderRadius="20px";
+  menuBar.style.width="200px";
+  setTimeout(()=>{
+    menuBar.style.height="200px";
+  },500);
+  setTimeout(()=>{
+  menuList.style.display="block";
+  },800)
+  menuImage.style.display="none";
+  closeMenu.style.display="block";
+  closeMenu.style.position="fixed";
+  closeMenu.style.top="20px";
+  closeMenu.style.borderRadius="50%";
+  closeMenu.style.backgroundColor="gray";
+  closeMenu.style.display="flex";
+  closeMenu.style.justifyContent="center";
+  closeMenu.style.alignItems="center";
+  menuBar.style.transitionDuration="0.5s";
+ });
+ closeMenu.addEventListener("mousedown" ,()=>{
+  closeMenu.style.display="none";
+  menuList.style.display="none";
+  menuImage.style.display="block";
+  menuBar.style.height="50px";
+  menuBar.style.width="50px";
+  menuBar.style.borderRadius="50%";
+  menuBar.style.top="20px";
+  menuBar.style.transitionDuration="0.2s";
+ }); 
+</script>
+</body>
+</html>
